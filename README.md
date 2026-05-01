@@ -1,10 +1,10 @@
-# QR Scanner — Application Flutter Premium
+# QR Scanner — Application Flutter 
 
-## 📱 Description
+## Description
 
 Application mobile Flutter de scan QR Code avec UI premium (glassmorphism, laser animé, dark theme).
 
-## 🚀 Démarrage rapide
+##  Démarrage rapide
 
 ```bash
 # 1. Installer les dépendances
@@ -18,7 +18,7 @@ flutter build apk --release        # Android
 flutter build ios --release        # iOS
 ```
 
-## 📦 Packages utilisés
+##  Packages utilisés
 
 | Package | Version | Usage |
 |---------|---------|-------|
@@ -29,7 +29,7 @@ flutter build ios --release        # iOS
 | `shared_preferences` | ^2.3.2 | Historique persistant |
 | `uuid` | ^4.4.2 | IDs uniques historique |
 
-## 🗂️ Structure du projet
+##  Structure du projet
 
 ```
 lib/
@@ -51,7 +51,7 @@ lib/
     └── history_screen.dart            # Écran historique
 ```
 
-## 🎨 Décisions techniques
+##  Décisions techniques
 
 ### Animation laser (scanner_overlay.dart)
 - **CustomPainter** pour le cadre statique → zéro rebuild Flutter
@@ -67,7 +67,7 @@ C'est la seule façon de flouter ce qui est DERRIÈRE en Flutter.
 ### Debounce du scan
 Variable `_isProcessing` qui bloque les détections multiples pendant le traitement.
 
-## 📱 Permissions requises
+##  Permissions requises
 
 ### Android (AndroidManifest.xml)
 - `CAMERA`
