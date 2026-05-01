@@ -1,0 +1,39 @@
+name: qr_scanner_app
+description: A premium QR Code scanner app with glassmorphism UI and animated laser scanner.
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+  flutter: ">=3.24.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # QR / Barcode scanning – ML Kit based, best performance in 2025-2026
+  mobile_scanner: ^5.2.3
+
+  # Open URLs in the system browser
+  url_launcher: ^6.3.1
+
+  # Runtime permission management (camera)
+  permission_handler: ^11.3.1
+
+  # Lightweight toast messages
+  fluttertoast: ^8.2.8
+
+  # Persistent scan history
+  shared_preferences: ^2.3.2
+
+  # Unique ID for history entries
+  uuid: ^4.4.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  # No custom fonts or assets needed for this project
